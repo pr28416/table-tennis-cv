@@ -1,0 +1,6 @@
+NOTES:
+9/3/2021 4:56:21
+- After observing pingpongball_tracking_test.mp4, I noticed that I can detect that the ball touches the table when width < height becomes width > height or width > height becomes width < height
+- This check should be made while the ball's green bounding box is between two horizontal lines (which indicate
+- Set center back as (0,0); points will be measured relative to the center back, not corner - to account for left-right boundaries, use trapezoid created by edges of table
+- The "center" of the ball is approximately the center of the bounding box
