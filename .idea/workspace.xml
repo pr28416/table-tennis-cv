@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706bb00f-f1c4-4b9f-b3e1-e11a0f0af7fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/canon_table.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcam_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/webcam_setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-04-2021 14.28.06 ttcv log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-04-2021 14.30.40 ttcv log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-04-2021 14.37.45 ttcv log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/table-tennis-cv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/table-tennis-cv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canon_table.png" beforeDir="false" afterPath="$PROJECT_DIR$/canon_table.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcam_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="webcam_setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="table-tennis-cv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -44,7 +50,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webcam_setup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.webcam_setup" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -80,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
