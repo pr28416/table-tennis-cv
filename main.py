@@ -156,7 +156,7 @@ class TableTennisCV():
 # """
 if __name__ == "__main__":
     ttcv = TableTennisCV()
-    ttcv.plot("canon_table.png")
-    # ttcv.start()
+    # ttcv.plot("canon_table.png")
+    ttcv.start()
 
 # """
