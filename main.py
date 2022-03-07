@@ -8,30 +8,8 @@ class TableTennisCV():
     def __init__(self, stream=0):
         self.stream = stream
         print("Launched TableTennisCV")
-        self.opponentBounds = {
-            # 'topLeft': (240,260),
-            # 'topRight': (1040,260),
-            # 'bottomRight': (1280,670),
-            # 'bottomLeft': (0,670)
-            # 'topLeft': (645,570),
-            # 'topRight': (2030,570),
-            # 'bottomRight': (2410,1400),
-            # 'bottomLeft': (200,1400)
-            'topLeft': (320, 256),
-            'topRight': (1036, 256),
-            'bottomRight': (1210, 720),
-            'bottomLeft': (100, 720)
-        }
-        self.playerBounds = {
-            # 'topLeft': (890, 0),
-            # 'topRight': (1820, 0),
-            # 'bottomRight': (1970, 360),
-            # 'bottomLeft': (720, 360)
-            'topLeft': (450, 0),
-            'topRight': (900, 0),
-            'bottomRight': (920, 60),
-            'bottomLeft': (424, 60)
-        }
+        self.opponentBounds = {'topLeft': (320, 256),'topRight': (1036, 256),'bottomRight': (1210, 720),'bottomLeft': (100, 720)}
+        self.playerBounds = {'topLeft': (450, 0),'topRight': (900, 0),'bottomRight': (920, 60),'bottomLeft': (424, 60)}
 
     def plot(self, image_path):
         img = cv.cvtColor(cv.imread(image_path), cv.COLOR_BGR2RGB)
@@ -42,6 +20,7 @@ class TableTennisCV():
         return (x+x+w)//2, (y+y+h)//2
 
     def shoelaceArea(self, *args): # Uses shoelace theorem
+        # TODO: Implement function
         p, q, m = 0, 0, len(args)
         for i in range(len(args)):
             p += args[i][0]*args[(i+1)%m][1]
@@ -49,11 +28,7 @@ class TableTennisCV():
         return abs(p-q)/2
 
     def ball_in_opponent_bounds(self, x, y, w, h):
-        return self._ball_in_bounds(x, y, w, h,
-                                    self.opponentBounds['topLeft'],
-                                    self.opponentBounds['topRight'],
-                                    self.opponentBounds['bottomLeft'],
-                                    self.opponentBounds['bottomRight'])
+        return self._ball_in_bounds(x, y, w, h,self.opponentBounds['topLeft'],self.opponentBounds['topRight'],self.opponentBounds['bottomLeft'],self.opponentBounds['bottomRight'])
 
     def ball_in_player_bounds(self, x, y, w, h):
         return self._ball_in_bounds(x, y, w, h,
@@ -104,13 +79,8 @@ class TableTennisCV():
                 print('Something went wrong while trying to access webcam')
                 break
 
-            # Make frame gray
-            # frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-            # frame = imutils.resize(frame, width=500)
-            # text = "No motion"
             gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
             gray = cv.GaussianBlur(gray, (21, 21), 0) # ksize originally (21,21)
-            # gray = cv.Canny(gray, 125, 175)
 
             if firstFrame is None:
                 firstFrame = gray
